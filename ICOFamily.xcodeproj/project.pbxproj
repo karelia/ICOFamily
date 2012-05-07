@@ -12,6 +12,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		CE38BAEE155889D200FB3255 /* globe16.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38BAEC155889D200FB3255 /* globe16.png */; };
+		CE38BAEF155889D200FB3255 /* globe32.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38BAED155889D200FB3255 /* globe32.png */; };
 		FA2C356B14969871000C9928 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2C356A14969871000C9928 /* Accelerate.framework */; };
 		FA2C356E14969885000C9928 /* NSMutableData+EndianValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2C356D14969885000C9928 /* NSMutableData+EndianValues.m */; };
 		FAB24F1B120760BB00003D13 /* ICOFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB24F1A120760BB00003D13 /* ICOFamily.m */; };
@@ -30,6 +32,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* ICOFamily-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICOFamily-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ICOFamily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICOFamily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE38BAEC155889D200FB3255 /* globe16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe16.png; sourceTree = "<group>"; };
+		CE38BAED155889D200FB3255 /* globe32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe32.png; sourceTree = "<group>"; };
 		FA2C356814969859000C9928 /* vecLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vecLib.framework; path = System/Library/Frameworks/vecLib.framework; sourceTree = SDKROOT; };
 		FA2C356A14969871000C9928 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		FA2C356C14969885000C9928 /* NSMutableData+EndianValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+EndianValues.h"; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE38BAEC155889D200FB3255 /* globe16.png */,
+				CE38BAED155889D200FB3255 /* globe32.png */,
 				8D1107310486CEB800E47090 /* ICOFamily-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -181,6 +187,8 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				CE38BAEE155889D200FB3255 /* globe16.png in Resources */,
+				CE38BAEF155889D200FB3255 /* globe32.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

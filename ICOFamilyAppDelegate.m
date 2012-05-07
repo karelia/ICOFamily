@@ -30,7 +30,20 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
 		
-	ICOFamily *fam = [ICOFamily familyWithImage:[NSImage imageNamed:@"NSApplicationIcon"]];
+	NSImage *test16 = [NSImage imageNamed:@"globe16"];
+	NSImage *test32 = [NSImage imageNamed:@"globe32"];
+
+	NSBitmapImageRep *bitmap16	= [[test16 representations] lastObject];
+	NSBitmapImageRep *bitmap32	= [[test32 representations] lastObject];
+
+	[[bitmap16 TIFFRepresentation] writeToFile:[@"~/Desktop/ICOFamilyTestIcon.16.tiff" stringByExpandingTildeInPath] atomically:NO];
+	[[bitmap32 TIFFRepresentation] writeToFile:[@"~/Desktop/ICOFamilyTestIcon.32.tiff" stringByExpandingTildeInPath] atomically:NO];
+
+	ICOFamily *fam = [ICOFamily family]; // Returns an autoreleased instance
+
+	[fam setBitmapImageRep:bitmap16 forElement:kICOFamily16Element];
+	[fam setBitmapImageRep:bitmap32 forElement:kICOFamily32Element];
+
 	[fam.data writeToFile:[@"~/Desktop/ICOFamilyTestIcon.ico" stringByExpandingTildeInPath] atomically:NO];
 }
 
