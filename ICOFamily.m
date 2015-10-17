@@ -156,8 +156,7 @@ typedef struct IconDir
 	[self setBitmapImageRep:nr forCustomSize:size];
 }
 - (NSData*)dataForCustomSize:(NSSize)size {
-	return [[self bitmapImageRepForCustomSize:size] representationUsingType:NSPNGFileType 
-																 properties:nil];
+	return [[self bitmapImageRepForCustomSize:size] representationUsingType:NSPNGFileType properties:@{}];
 }
 - (NSImage*)imageForCustomSize:(NSSize)size {
 	return [[[NSImage alloc] initWithData:[self dataForCustomSize:size]] autorelease];
@@ -279,8 +278,7 @@ typedef struct IconDir
 }
 
 - (NSData*)dataForElement:(kICOFamilyElement)element {
-	return [[self bitmapImageRepForElement:element] representationUsingType:NSPNGFileType 
-																 properties:nil];
+    return [[self bitmapImageRepForElement:element] representationUsingType:NSPNGFileType properties:@{}];
 }
 - (NSImage*)imageForElement:(kICOFamilyElement)element {
 	return [[[NSImage alloc] initWithData:[self dataForElement:element]] autorelease];
